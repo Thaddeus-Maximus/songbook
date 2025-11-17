@@ -1,120 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<title>Songbooks</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IM+FELL+DW+Pica+SC&display=swap" rel="stylesheet">
 
 <style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background: url('bg.svg') center/cover no-repeat #fafaf2;
+        color: #211e1e;
+        font-family: "IM FELL DW Pica SC", serif;
+        font-size: 1.25rem;
+    }
 
-body {
-	background: url('bg.svg');
-	background-size: 100% auto;
-	/*background-repeat: no-repeat;*/
-	background-color: #fafaf2;
-	color: #211e1e;
-	font-family: "IM FELL DW Pica SC", serif;
-	font-size: 1.25rem;
-}
+    h1 { font-size: 5rem; margin: 1.2rem 0 0.8rem; }
+    h2 { font-size: 3rem; margin: 0.4rem 0; font-style: italic; }
+    h3 { font-size: 2rem; margin: 2rem 0; }
 
-h1 {
-	font-size: 5rem;
-	padding: 0.2rem 0 0.1rem 0;
-	margin: 1rem 0 1rem 0;
-}
-h2 {
-	font-size: 3rem;
-	padding: 0.2rem 0 0.2rem 0;
-	margin: 0.1rem 0 0.2rem 0;
-	font-style: italic;
-}
-h3 {
-	font-size: 2rem;
-	padding: 0.1rem 0 0.2rem 0;
-	margin: 0.1rem 0 0.4rem 0;
-}
+    a { color: #911a0a; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-p {
-	padding: 0.1rem 0 0.5rem 0;
-	margin: 0.1rem 0 1rem 0;
-	color: #d0cbc5dd;
-	font-size: 1rem;
-}
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 2rem auto;
+    }
 
-ul {
-	list-style-type: none; 
-	padding: 0.1rem 0 0.5rem 0;
-	margin: 0.1rem 0 1rem 0;
-	font-size: 1rem;
-}
+    /* Core responsive container */
+    .books {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 4rem;
+        max-width: 100rem;
+        margin: 4rem auto;
+        padding: 0 2rem;
+        justify-content: center;
+    }
 
-.page {
-	text-align: center;
-	width: 100%;
-	max-width: 60rem;
-	margin-left: auto;
-	margin-right: auto;
-}
+    .book {
+        text-align: center;
+    }
 
-a {
-	color: #911a0a;
-}
+    /* Optional light card look that still feels period-appropriate */
+    .book > div {
+        background: rgba(250, 250, 242, 0.92);
+        padding: 2.5rem 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
 
-img {
-	
-}
-
-.column {
-  float: left;
-  width: 47%;
-}
-
-.divider {
-	float: left;
-	width: 6%;
-}
-
-.row div:first-child {
-	text-align: right;
-}
-.row div:last-child {
-	text-align: left;
-}
-
-
-.row {
-	margin-left: auto;margin-right: auto;
-  width: 80%;
-  max-width: 40rem;
-  margin-bottom: 1rem;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+    .footer {
+        text-align: center;
+        padding: 2rem;
+    }
 </style>
-
 </head>
 
 <body>
-<div class="page">
-	<img style="width: 100%;" src="cover.svg"/>
 
-	<h1>Download in:</h1>
-	<h2><a href="songbook.compiled.pdf">Pamphlet Format</a></h2>
-	<h2><a href="songbook.pdf">Single Page Format</a></h2>
-	<br/>
+<div class="books">
 
-	<img style="width: 100%;" src="musica_nativitatis_cover_exp.svg"/>
+    <!-- Book 1 -->
+    <article class="book">
+        <div>
+            <img src="cover.svg" alt="Songbook cover">
+            <h1>Download in:</h1>
+            <h2><a href="songbook.compiled.pdf">Pamphlet Format</a></h2>
+            <h2><a href="songbook.pdf">Single Page Format</a></h2>
+        </div>
+    </article>
 
-	<h1>Download in:</h1>
-	<h2><a href="musica_nativitatis.compiled.pdf">Pamphlet Format</a></h2>
-	<h2><a href="musica_nativitatis.pdf">Single Page Format</a></h2>
-	<br/>
+    <!-- Book 2 -->
+    <article class="book">
+        <div>
+            <img src="musica_nativitatis_cover_exp.svg" alt="Musica Nativitatis cover">
+            <h1>Download in:</h1>
+            <h2><a href="musica_nativitatis.compiled.pdf">Pamphlet Format</a></h2>
+            <h2><a href="musica_nativitatis.pdf">Single Page Format</a></h2>
+        </div>
+    </article>
 
-	<h3><a href="https://github.com/Thaddeus-Maximus/songbook">GitHub</a></h3>
+    <!-- Add more books simply by copying the block above -->
+
 </div>
+
+<div class="footer">
+    <h3><a href="https://github.com/Thaddeus-Maximus/songbook">GitHub</a></h3>
+</div>
+
 </body>
+</html>
