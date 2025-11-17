@@ -66,6 +66,15 @@
       }
       \include "lookeast.ly"
 
+\pageBreak
+
+      \markup \fill-line {
+        \override #'(font-name . "IM FELL DW Pica SC")
+        \override #'(font-size . 4)
+        \bold "Gaudete (Christus Est Natus)"
+      }
+      \include "gaudete.ly"
+
   \pageBreak
 
       \markup \fill-line {

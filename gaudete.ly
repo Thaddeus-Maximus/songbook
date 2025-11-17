@@ -1,23 +1,5 @@
 \version "2.18.2"
 
-#(set-global-staff-size 16.5)
-
-\header {
-    title = "Gaudete! (Christus est Natus)"
-    tagline = " "
-}
-
-
-\paper {
-    mystaffsize = #20
-  #(define fonts
-     (make-pango-font-tree "IM FELL Double Pica"
-       "IM FELL Double Pica"
-       "IM FELL Double Pica"
-       (/ mystaffsize 20)
-       )
-     )
-}
 
 \score { 
 <<
