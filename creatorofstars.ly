@@ -14,17 +14,17 @@
 <<
     \new Voice = "melody" { 
     \relative {
-    	\time 10/4
+    	\time 9/4
     	\omit Stem
     	\omit Score.BarNumber
     	\omit Score.Clef
     	\omit Score.TimeSignature
     	\omit Score.KeySignature
     	\key c \minor
-    	r4 g'4 ees g bes bes c aes bes2 |
-    	r4 bes4 c aes bes aes \break g f g2 |
-    	r4 bes4 aes f g aes g f ees2 |
-    	r4 ees4 g aes bes aes g f g2 |
+    	g'4 ees g bes bes c aes bes2 |
+    	bes4 c aes bes aes \break g f g2 |
+    	bes4 aes f g aes g f ees2 |
+    	ees4 g aes bes aes g f g2 |
 	}}
 
     \new Lyrics \lyricsto "melody" {

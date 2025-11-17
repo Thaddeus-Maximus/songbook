@@ -8,12 +8,12 @@
   right-margin = 0.25\in
   line-width = 5\in
 
-  mystaffsize = #26
+  mystaffsize = #20
   #(define fonts
      (make-pango-font-tree "IM FELL Double Pica"
        "IM FELL Double Pica"
        "IM FELL Double Pica"
-       (/ mystaffsize 26)
+       (/ mystaffsize 20)
        )
      )
   
@@ -74,6 +74,22 @@
         \bold "Gaudete (Christus Est Natus)"
       }
       \include "gaudete.ly"
+
+\pageBreak
+
+      \markup \fill-line {
+        \override #'(font-name . "IM FELL DW Pica SC")
+        \override #'(font-size . 3)
+        \bold "Adeste Fidelis"
+      }
+      \include "adeste.ly"
+
+      \markup \fill-line {
+        \override #'(font-name . "IM FELL DW Pica SC")
+        \override #'(font-size . 3)
+        \bold "The Advent of our King"
+      }
+      \include "adventofourking.ly"
 
   \pageBreak
 
