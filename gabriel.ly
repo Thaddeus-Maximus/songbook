@@ -1,11 +1,6 @@
 \version "2.18.2"
 
 #(set-global-staff-size 16.5)
-#(set-default-paper-size '(cons (* 5.5 in) (* 8.5 in)))
-
-\header {
-    title = "Gabriel's Message"
-}
 
 \paper {
     top-margin = 0.25\in
@@ -37,7 +32,7 @@
 		\break
 			bes8 |
 			c4 bes8 a4 g8 a4. d,4. |
-			g4.(bes8 a8 bes8 g4.(g4)) f8 | g2.(g4)
+			g4.(bes8 a8 bes8 g4. g4) f8 | g2.(g4)
 	}}
 
     \new Lyrics \lyricsto "melody" {

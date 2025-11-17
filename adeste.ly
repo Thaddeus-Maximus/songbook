@@ -1,19 +1,11 @@
 \version "2.18.2"
 
 #(set-global-staff-size 12.5)
-#(set-default-paper-size '(cons (* 5.5 in) (* 8.5 in)))
 
 \header {
     title = "O Come All Ye Faithful / Adeste Fidelis"
 }
 
-\paper {
-    top-margin = 0.25\in
-    top-markup-spacing.basic-distance = #1
-    markup-system-spacing.basic-distance = #1
-    last-bottom-spacing.basic-distance = #1
-    line-width = 5\in
-}
 
 upperOne = 
     \relative c'' {

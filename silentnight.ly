@@ -1,17 +1,5 @@
 \version "2.18.2"
 
-#(set-global-staff-size 16.5)
-#(set-default-paper-size '(cons (* 5.5 in) (* 8.5 in)))
-
-\header {
-    title = "Silent Night"
-}
-
-\paper {
-    top-margin = 0.25\in
-    line-width = 5\in
-}
-
 \score { 
 <<
     \new Voice = "refrain" { 
@@ -24,8 +12,8 @@
         b4 b8 f4. |
         g4 g8 b8.(a16) g8 |
         f8. g16 f8 d4. | \break
-        g4 g8 b8. a16 |
-        g8 f8. g16 f8 d4.|
+        g4 g8 b8. a16 g8 |
+        f8. g16 f8 d4.|
         c'4 c8 e8. c16 a8 |
         b4.(d4.) |
         b8(f8) d8 f8. e16 c8 |

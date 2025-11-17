@@ -1,17 +1,15 @@
 \version "2.18.2"
 
-#(set-global-staff-size 18)
-#(set-default-paper-size '(cons (* 5.5 in) (* 8.5 in)))
-
-\header {
-    title = "People, Look East!"
-}
-
 \paper {
-    top-margin = 0.25\in
-    line-width = 5\in
+	mystaffsize = #20
+  #(define fonts
+     (make-pango-font-tree "IM FELL Double Pica"
+       "IM FELL Double Pica"
+       "IM FELL Double Pica"
+       (/ mystaffsize 20)
+       )
+     )
 }
-
 \score { 
 <<
     \new Voice = "melody" { 
@@ -38,7 +36,7 @@
         \set stanza = "1."
 		Peo -- ple, look East! The time is near of the crown -- ing of the year.
 		Make your house fair as you are a -- ble, Trim the hearth and set the ta -- ble.
-		Peo -- ple look East, and sing to -- day:
+		- _ _ _ _ _ _ _
 		Love the Guest is on the way.
     }
 
@@ -47,7 +45,7 @@
 		Fur -- rows, be glad, though earth is bare,
 		One more seed is plant -- ed there.
 		Give up your strength the seed to nour -- ish, That in course the flow'r may flour -- ish.
-		_ _ _ _ _ _ _ _
+		Peo -- ple look East, and sing to -- day:
 		Love the Rose is on the way.
     }
 
@@ -60,7 +58,7 @@
     }
     \new Lyrics \lyricsto "melody" {
         \set stanza = "4."
-		Stars, keep the watch. When night is dum One more light the bowl shall brim. shin -- ing be -- yong the fros -- ty weath -- er, Bright as sun and moon to -- geth -- er.
+		Stars, keep the watch. When night is dim One more light the bowl shall brim. shin -- ing be -- yong the fros -- ty weath -- er, Bright as sun and moon to -- geth -- er.
 		_ _ _ _ _ _ _ _
 		Love the Star is on the way.
     }

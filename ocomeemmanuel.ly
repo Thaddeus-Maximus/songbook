@@ -1,15 +1,18 @@
 \version "2.18.2"
 
 #(set-global-staff-size 16.5)
-#(set-default-paper-size '(cons (* 5.5 in) (* 8.5 in)))
 
-\header {
-    title = "O Come, O Come, Emmanuel"
-}
+
 
 \paper {
-    top-margin = 0.25\in
-    line-width = 5\in
+	mystaffsize = #16
+  #(define fonts
+     (make-pango-font-tree "IM FELL Double Pica"
+       "IM FELL Double Pica"
+       "IM FELL Double Pica"
+       (/ mystaffsize 16)
+       )
+     )
 }
 
 \score { 
@@ -54,6 +57,7 @@
 		To us the path of knowl -- edge show,
 		And teach us in her ways to go.
 
+		\override LyricText.font-shape = #'italic
 		Gau -- de! Gau -- de! Em -- man -- u -- el
 		Nas -- ce -- tur pro te Is -- ra -- el!
     }

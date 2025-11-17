@@ -1,15 +1,22 @@
 \version "2.18.2"
 
 #(set-global-staff-size 16.5)
-#(set-default-paper-size '(cons (* 5.5 in) (* 8.5 in)))
 
 \header {
     title = "Gaudete! (Christus est Natus)"
+    tagline = " "
 }
 
+
 \paper {
-    top-margin = 0.25\in
-    line-width = 5\in
+    mystaffsize = #20
+  #(define fonts
+     (make-pango-font-tree "IM FELL Double Pica"
+       "IM FELL Double Pica"
+       "IM FELL Double Pica"
+       (/ mystaffsize 20)
+       )
+     )
 }
 
 \score { 
