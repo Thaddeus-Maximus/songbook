@@ -83,6 +83,7 @@
     }
 
     \new Lyrics \lyricsto "melody" {
+        \override LyricText.font-shape = #'italic
         \set stanza = "I."
       A4 -- des2 -- te,4 fi -- del2 -- es,
     Lae4 -- ti tri -- um -- phan2 -- tes,4
@@ -98,6 +99,7 @@
 
 
     \new Lyrics \lyricsto "melody" {
+        \override LyricText.font-shape = #'italic
         \set stanza = "II."
      _ Can2. -- tet4 nunc hym2 -- nos
     Cho4 -- rus ang -- el -- or2 -- um;4
@@ -106,6 +108,7 @@
     In4 ex -- cel -- sis Deo.'1
     }
     \new Lyrics \lyricsto "melody" {
+        \override LyricText.font-shape = #'italic
         \set stanza = "III."
      _ Er2. -- go4 qui na2 -- tus
     di4 -- e ho -- di -- er2 -- na4

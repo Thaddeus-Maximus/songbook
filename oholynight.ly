@@ -8,17 +8,30 @@
 		\numericTimeSignature
         \key c \major
         \partial 2.
-        e'4. e4 e8 | g4.(g4) g8 a4 a8 f4 a8 | c2. g4 g8 e4 d8
-        c4. e4 f8 g4. f4 d8 | c2. 
+        e'4. e4 e8 | g4.(g4) g8 a4 a8 f4 a8 | c2. g4 
 
-        e4. e4 e8 | g4.(g4) g8 a4 a8 f4 a8 c2. g4 g8 fis4 e8 |
+        \break
+        g8 e4 d8
+        c4. e4 f8 g4. f4 d8 | c2. 
+        \break
+
+        e4. e4 e8 | g4.(g4) g8 a4 a8 f4 a8 c2. g4
+        \break
+        g8 fis4 e8 |
         b'4. g4 a8 b4. c4 b8 | e,1
+        \break
 
         r4. g8 | g4. a4. d,4. g4. | a4 g8 c4 e,8 a4. g4
         g8 | g4. a4. d,4. g4. a4 g8 c4 e,8 g2. |
+        \break
+
         c2.(c4.) b4 a8 | b2.(b4.) b4 b8 |
-        c2.(c4) a8 a4 a8 c2. c4. c4. e2.(d4. d4) g,8 | c2.(c4.) b4(a8)
-        g2.(g4) g8 a4 g8 g2.(g4.) c4. d2.(d4.) g,4. e'2.(e4.) d4.
+        c2.(c4) a8 a4 a8 c2. c4. 
+        \break
+        c4. e2.(d4. d4) g,8 | c2.(c4.) b4(a8)
+        g2.(g4) g8 a4 g8 g2.(g4.)
+        \break
+        c4. d2.(d4.) g,4. e'2.(e4.) d4.
         c2. b4. c4 d8 | c1.
     }}
 

@@ -27,7 +27,7 @@
     	c'4 c4 c4 f,4 | bes4 a4 a4(g4) | 
     	c4 c4 c4 f,4 | bes4 a4 a4(g4) |
     	
-    	d'4 d4 d4 c4 | bes4 a4 b2 |
+    	d'4 d4 d4 c4 | bes4 a4 bes2 |
     	g4 a8(bes8) c4. f,8 | f4 g4 a2 |
 
     	\break

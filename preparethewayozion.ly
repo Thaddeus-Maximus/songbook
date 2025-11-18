@@ -21,18 +21,19 @@
     	\omit Score.KeySignature
     	\omit Score.Clef
     	
-    	e'8(d8) b4 e4 e4 fis4(g4) a4(fis8 d8) |
-    	g8(fis8) e4 b'8 b8(g8 fis8) e1 |
+    	e'8(d8) b4 e4 e4 fis8(g8) a2(fis8 d8) |
+    	g8(fis8) e4 b'4 b8(g8 fis4) e2. |
     	\break
-    	e8(d8) b4 e4 e4 fis4(g4) a4(fis8 d8) |
-    	g8(fis8) e4 b'8 b8(g8 fis8) e1 |
+    	e8(d8) b4 e4 e4 fis8(g8) a2(fis8 d8) |
+    	g8(fis8) e4 b'4 b8(g8 fis4) e2. |
     	\break
     	
     	a4 b2 c8 d8 a4 b4.(a8) g4 |
-    	fis4 e4. e8 e8(d8) b4 d4(e4) fis4 |
+    	fis4 e4 e4 e8(d8) b4 d4(e4) fis4 |
 
     	\break
-    	e8(d8) b4 e4 e4 fis8(g8) a2 g8(fis8) e4 b'4 b8(a8) fis4 e1
+    	e8(d8) b4 e4 e4 fis8(g8) a2. |
+    	g8(fis8) e4 b'4 b8(a8) fis4 e2. |
 	}}
 
     \new Lyrics \lyricsto "melody" {

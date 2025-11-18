@@ -12,7 +12,6 @@
     	\omit Score.TimeSignature
     	\omit Score.KeySignature
 		f'4 g(a) a2 d4 c c(b) a a2(g2)
-		\break
 		a4 b a g f e f e d2
 	}}
 
@@ -29,46 +28,62 @@
 >>
 }
 
-\score { 
-<<
-    \new Voice = "melody" { 
-    \relative {
-    	\omit Stem
-    	\omit Score.BarNumber
-    	\omit Score.Clef
-    	\omit Score.TimeSignature
-    	\omit Score.KeySignature
-		f'4 g a a(g) a a(b) a a2 
-		a4 a a a a a a g b a a(g) f2
-		a4 b c c c c c c c c c c c2 \break
-		c4 c c c(d) c c(b) a a2
-		f4 g(a) a a2 g4(b) a a(g) f f2
-		a4 a a a a a a a a a a a a g c c(b) a2
-		f4 g(a) a a a(b) a a2 g4(f) e f(e) d2
-	}}
-
-    \new Lyrics \lyricsto "melody" {
-        \set stanza = "I."
-		Ne i -- ra -- sca -- ris Do -- mi -- ne,
-		ne ul -- tra me -- mi -- ne -- ris in -- i -- qui -- ta -- tis:
-		ec -- ce ci -- vi -- tas San -- cti fa -- cta est de -- ser -- ta:
-		Si -- on de -- ser -- ta fa -- cta est:
-		Je -- ru -- sa -- lem de -- so -- la ta est:
-		do -- mus san -- cti -- fi -- ca --ti -- o -- nis tu -- ae et glo -- ri -- ae tu -- ae,
-		u -- bi lau -- da -- ve -- runt te pa -- tres no -- stri.
+\markup {
+  \fill-line {
+    % moves the column off the left margin;
+    % can be removed if space on the page is tight
+    \hspace #0.1
+    \column {
+      \line { \bold "1."
+        \column {
+          "Be not angry, O Lord, and remember no longer our iniquity:"
+				"behold the city of the Holy One is become a desert:"
+				"Sion is become a desert: Jerusalem is desolate:"
+				"the house of thy sanctification and of thy glory, where our fathers praised thee."
+        }
+      }
+      % adds vertical spacing between verses
+      \combine \null \vspace #0.5
+      \line { \bold "2."
+        \column {
+          "We have sinned and are become as one that is unclean:"
+				"and we have all fallen as a leaf, and our iniquities like the wind have carried us away:"
+				"thou hast hidden thy face from us, and hast crushed us in the hold of our iniquity."
+        }
+      }
+      \combine \null \vspace #0.5
+    %}
+    %% adds horizontal spacing between columns
+    %\hspace #0.1
+    %\column {
+      \line { \bold "3."
+        \column {
+          "Behold, O Lord, the affliction of thy people, and send forth Him Who is to come:"
+				"send forth the Lamb, the ruler of the earth,"
+				"from the Rock of the desert, to the mount of daughter Sion:"
+				"that he may take away the yoke of our captivity."
+        }
+      }
+      % adds vertical spacing between verses
+      \combine \null \vspace #0.5
+      \line { \bold "4."
+        \column {
+          "Be comforted, be comforted, my people: thy salvation cometh quickly:"
+				"why art thou consumed with grief: for sorrow hath estranged thee:"
+				"I will save thee: fear not, for I am the Lord thy God,"
+				"The Holy One of Israel, thy Redeemer."
+        }
+      }
+      \combine \null \vspace #1.0
     }
-%    \new Lyrics \lyricsto "melody" {
-%        \set stanza = "1."
-%        \override LyricText.font-shape = #'italic
-%		Be not an -- gry with us, O Lord,
-%		do not re -- mem -- ber our in -- i _ -- qui _ -- ties,
-%		Be -- hold, your ho -- ly ci -- ty has be -- come a waste -- land.
-%		Si -- on has be -- come a de -- sert. Je -- ru -- sa -- lem is de -- so -- late, _
-%		your ho -- ly house and your glo -- ry, where our fa -- thers prai -- sed you... _ _ _
-%    }
->>
+    % gives some extra space on the right margin;
+    % can be removed if page space is tight
+    \hspace #0.1
+  }
 }
 
+
+
 \score { 
 <<
     \new Voice = "melody" { 
@@ -78,15 +93,15 @@
     	\omit Score.Clef
     	\omit Score.TimeSignature
     	\omit Score.KeySignature
-		f'4 g a a a2 \noBreak
-		f4  g a a a2 \noBreak
-		a4 g c c(b) a2 \break
-		a4 a d c c b a a(g) f2
-		a4 b c c c(d) \break c c(b) a a2
-		a4 a a a a a g(f) f(b) a2
-		d4 c(b) a a a g a f(g) f2(e2)
+		f'4 g a a a2
+		f4  g a a a2
+		a4 g c c(b) a2 
+		a4 a d c \break c b a a(g) f2
+		a4 b c c c(d) c c(b) a a2
+		a4 a \break a a a a g(f) f(b) a2
+		d4 c(b) a a a g a f(g) f2(e2) \break
 		f4 g(a) a a a d c c b a a(g) f2
-		a4 a a(b) a a g g(f) e f(e) d
+		a4 a a(b) a a g g(f) e f(e) d \break
 	}}
 
     \new Lyrics \lyricsto "melody" {
@@ -115,3 +130,4 @@
 %    }
 >>
 }
+

@@ -14,32 +14,41 @@
     	\allowBreak
     	
     	f'4 g b b b b b c2
-    	b4 b b b b b b b \break b a f g2
     	 \bar "|"
+    	b4 b b b b b b b \break b a f g2
+    	 \bar "."
 
     	f4 g b b c b2
+    	 \bar "|"
     	b4 b b b b b a f g2 \break
- \bar "|"
+ \bar "."
     	f4 g b b c b2
+    	 \bar "|"
     	b4 b b b b b b a f g2 \break
- \bar "|"
+ \bar "."
 
     	f4 g b b b b b b b b c2
+    	 \bar "|"
     	b4 b b a f g2 \break
- \bar "|"
+ \bar "."
     	f4 g b b b b b c2
+    	 \bar "|"
     	b4 b b b b a f g2 \break
- \bar "|"
+ \bar "."
     	f4 g b b b b c2
+    	 \bar "|"
     	b4 b b b b b b b b  \break b b b b a f g2 
- \bar "|"
+ \bar "."
     	f4 g b b b b b b c2 \break
+    	 \bar "|"
     	b4 b b b b b b a f g2 
- \bar "|"
+ \bar "."
     	f4 g b b b b \break b c b2
+    	 \bar "|"
     	b4 b b b b b a f g2 
- \bar "|"
+ \bar "."
     	f4 g b b b \break b b b b b b b b c b2
+    	 \bar "|"
     	b4 b b b b b \break b b b b b b b b b a f g2
     \bar "||"
 	}}

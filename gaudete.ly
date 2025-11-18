@@ -8,6 +8,7 @@
 		\time 3/4
 		\partial 4
 		\numericTimeSignature
+        \omit Score.TimeSignature
 		g'4 b4 a4 g8 a8
 		b4 b8 a4 g8
 		f4 d4
@@ -39,6 +40,7 @@
         \time 4/4
         
         \numericTimeSignature
+        \omit Score.TimeSignature
 
         g'8 g8 f8 g8 b8 a8 g4
         g8 e8 d8 e8 c4 c4

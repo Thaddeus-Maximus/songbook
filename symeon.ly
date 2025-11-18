@@ -11,14 +11,22 @@
     	\omit Score.Clef
     	\omit Stem
     	
-    	a'4 b d d d d e d d d c d
-    	d d b d c c2 |
+    	a'4 b d d d d e d d d c d2
+    	 \bar "|"
+    	d4 d b d c c2 |
     	\break
-    	a4 b d d d e d b d
-    	d d d d \break d d d d d d b d c2
-    	a4 b d d d e d d c d
+    	 \bar "."
+
+    	a4 b d d d e d b d2
+    	 \bar "|"
+    	d4 d d d \break d d d d d d b d c2
+    	 \bar "."
+
+    	a4 b d d d e d d c d2
+    	 \bar "|"
     	\break
-    	d d d d d d d b d c c2
+    	d4 d d d d d d b d c c2
+    	 \bar "."
 	}}
 
     \new Lyrics \lyricsto "melody" {
