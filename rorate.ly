@@ -7,7 +7,10 @@
     \new Voice = "melody" { 
     \relative {
     	\omit Stem
-    	\omit BarNumber
+    	\omit Score.BarNumber
+    	\omit Score.Clef
+    	\omit Score.TimeSignature
+    	\omit Score.KeySignature
 		f'4 g(a) a2 d4 c c(b) a a2(g2)
 		\break
 		a4 b a g f e f e d2
@@ -20,8 +23,8 @@
 
     \new Lyrics \lyricsto "melody" {
 		\override LyricText.font-shape = #'italic
-    	Drop down dew ye hea -- vens from above,
-    	and let the skies pour forth right -- eous -- ness.
+    	Drop down ye hea -- vens from a -- bove,
+    	and let the skies pour down right -- eous -- ness.
     }
 >>
 }
@@ -31,7 +34,10 @@
     \new Voice = "melody" { 
     \relative {
     	\omit Stem
-    	\omit BarNumber
+    	\omit Score.BarNumber
+    	\omit Score.Clef
+    	\omit Score.TimeSignature
+    	\omit Score.KeySignature
 		f'4 g a a(g) a a(b) a a2 
 		a4 a a a a a a g b a a(g) f2
 		a4 b c c c c c c c c c c c2 \break
@@ -51,15 +57,15 @@
 		do -- mus san -- cti -- fi -- ca --ti -- o -- nis tu -- ae et glo -- ri -- ae tu -- ae,
 		u -- bi lau -- da -- ve -- runt te pa -- tres no -- stri.
     }
-    \new Lyrics \lyricsto "melody" {
-        \set stanza = "1."
-        \override LyricText.font-shape = #'italic
-		Be not an -- gry with us, O Lord,
-		do not re -- mem -- ber our in -- i _ -- qui _ -- ties,
-		Be -- hold, your ho -- ly ci -- ty has be -- come a waste -- land.
-		Si -- on has be -- come a de -- sert. Je -- ru -- sa -- lem is de -- so -- late, _
-		your ho -- ly house and your glo -- ry, where our fa -- thers prai -- sed you... _ _ _
-    }
+%    \new Lyrics \lyricsto "melody" {
+%        \set stanza = "1."
+%        \override LyricText.font-shape = #'italic
+%		Be not an -- gry with us, O Lord,
+%		do not re -- mem -- ber our in -- i _ -- qui _ -- ties,
+%		Be -- hold, your ho -- ly ci -- ty has be -- come a waste -- land.
+%		Si -- on has be -- come a de -- sert. Je -- ru -- sa -- lem is de -- so -- late, _
+%		your ho -- ly house and your glo -- ry, where our fa -- thers prai -- sed you... _ _ _
+%    }
 >>
 }
 
@@ -68,7 +74,10 @@
     \new Voice = "melody" { 
     \relative {
     	\omit Stem
-    	\omit BarNumber
+    	\omit Score.BarNumber
+    	\omit Score.Clef
+    	\omit Score.TimeSignature
+    	\omit Score.KeySignature
 		f'4 g a a a2 \noBreak
 		f4  g a a a2 \noBreak
 		a4 g c c(b) a2 \break
@@ -91,18 +100,18 @@
 		Sal -- va -- bo te, no -- li ti -- me -- re,
 		e -- go e -- nim sum Do -- mi -- nus De -- us tu -- us, San -- ctus Is -- ra -- el, Re -- dem -- ptor tu -- us.
     }
-    \new Lyrics \lyricsto "melody" {
-        \set stanza = "1."
-        Com -- fo -- rt ye, _
-        Com -- fo -- rt ye, _
-        _ my peo -- ple, _
-        My sal -- va -- tion shall not ta _ -- rry,
-        Why wilt thou waste away in sad -- _ ness?
-        _ Why hath sor -- row si -- ezed thee? _
-        Fear not, for I _ will save thee: _
-        For I am the Lord thy God,
-        God of Is -- ra -- el,
-        thy Red -- eem _ _ _ _ _ _ -- er.
-    }
+%    \new Lyrics \lyricsto "melody" {
+%        \set stanza = "2."
+%        Com -- fort ye, _ _ _ _
+%        Com -- fort ye, _ _
+%        my peo -- ple,
+%        My sal -- va -- tion shall not ta _ -- rry,
+%        Why wilt thou waste away in sad -- _ ness?
+%        _ Why hath sor -- row si -- ezed thee? _
+%        Fear not, for I _ will save thee: _
+%        For I am the Lord thy God,
+%        God of Is -- ra -- el,
+%        thy Red -- eem _ _ _ _ _ _ -- er.
+%    }
 >>
 }

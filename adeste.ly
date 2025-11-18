@@ -19,24 +19,26 @@
     \key a \major
     \override Staff.TimeSignature.style = #'numbered
     \time 4/4
-    \partial 4 a4 | a2 e4 a |
+    \partial 4
+    a4 | a2 e4 a |
     b2 e, |
     cis'4 b cis d |
-    cis2 b4 a |
+    cis2 b4 \break
+    a |
     a2 gis4 fis |
     gis4( a) b cis |
     gis2( fis4.) e8 |
-    e1 | 
+    e1 | \break
     e'2 d4 cis |
     d2 cis |
     b4 cis a b |
     gis4.( fis8) e4 
-    \bar "|" 
+    \bar "|" \break
     a | a gis a b |
     a2 e4 cis' |
     cis b cis d |
     cis2 b4
-    \bar "|" 
+    \bar "|"  \break
     cis4 |
     d4 cis b a |
     gis2 a4( d) |

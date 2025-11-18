@@ -14,25 +14,24 @@
 <<
     \new Voice = "melody" { 
     \relative {
-		\time 9/8
 		\key g \minor
-		\partial 8
+		\partial 4
 		\numericTimeSignature
-			\time 3/8
-			d'8 | g4 bes8 a4 d8 bes4 a8 | 
-			g4. a4. d,4.(d4) 
+			\time 3/4
+			d'4 | g2 bes4 a2 d4 bes2 a4 | 
+			g2. a2. d,2.(d2) 
 		\break
-			d8 |
-			g4 bes8 a4 c8 bes4 a8 |
-			g4.(g4) f8 g4.(g4)
+			d4 |
+			g2 bes4 a2 c4 bes2 a4 |
+			g2.(g2) f4 g2.(g2)
 		\break
-			bes8 |
-			bes4 c8 bes4 a8 bes4 c8 d4 d8 |
-			c4. bes4. a4.(a4)
+			bes4 |
+			bes2 c4 bes2 a4 bes2 c4 d2 d4 |
+			c2. bes2. a2.(a2)
 		\break
-			bes8 |
-			c4 bes8 a4 g8 a4. d,4. |
-			g4.(bes8 a8 bes8 g4. g4) f8 | g2.(g4)
+			bes4 |
+			c2 bes4 a2 g4 a2. d,2. |
+			g2.(bes4 a4 bes4 g2. g2) f4 | g2.
 	}}
 
     \new Lyrics \lyricsto "melody" {
@@ -40,7 +39,7 @@
 		The an -- gel Ga -- bri -- el from heav -- en came,
 		His wings as drift -- ed snow, his eyes __ as flame:
 		All hail to thee, O low -- ly maid -- en Mar _ -- y,
-		Most high -- ly fa -- vored la -- dy. Glo -- -- -- ri -- a!
+		Most high -- ly fa -- vored la -- dy. Glo __ __  ri -- a!
     }
     \new Lyrics \lyricsto "melody" {
 		\set stanza = "2."

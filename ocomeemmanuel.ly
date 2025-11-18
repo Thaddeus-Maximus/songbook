@@ -1,19 +1,5 @@
 \version "2.18.2"
 
-#(set-global-staff-size 16.5)
-
-
-
-\paper {
-	mystaffsize = #16
-  #(define fonts
-     (make-pango-font-tree "IM FELL Double Pica"
-       "IM FELL Double Pica"
-       "IM FELL Double Pica"
-       (/ mystaffsize 16)
-       )
-     )
-}
 
 \score { 
 <<
@@ -32,37 +18,29 @@
 			a8 | a8 e8 e8 fis8 | g4(fis8) e8 | d4.
 		\break
 			g8 | a8 b8 b8 b8 | a8(c8 b8) a8 | g4.
-		\break
-			d'8 | d4. b8 | b4. 
-			b8  | a8(c8 b8) a8 | g4.
-			a8  | b8 g8 e8 g8 | a8(fis8 e8) d8 | e4.
 
 	}}
 
     \new Lyrics \lyricsto "melody" {
 		\set stanza = "1."
+         \set shortVocalName = \markup \bold \small "1."
 		O come, O come, Em -- man -- u -- el,
 		And ran -- some cap -- tive Is -- ra -- el,
 		Who mourns in lone -- ly ex -- ile here
 		Un -- til the Son of God ap -- pear.
-
-		Re -- joice! Re -- joice! Em -- man -- u -- el
-		shall come to thee, O Is -- ra -- el!
     }
 
     \new Lyrics \lyricsto "melody" {
 		\set stanza = "2."
+         \set shortVocalName = \markup \bold \small "2."
 		O come, Thou Wis -- dom from on high,
 		Who or -- d'rest all things might -- i -- ly;
 		To us the path of knowl -- edge show,
 		And teach us in her ways to go.
-
-		\override LyricText.font-shape = #'italic
-		Gau -- de! Gau -- de! Em -- man -- u -- el
-		Nas -- ce -- tur pro te Is -- ra -- el!
     }
     \new Lyrics \lyricsto "melody" {
 		\set stanza = "3."
+         \set shortVocalName = \markup \bold \small "3."
 		O come,  O come, Thou Lord of might,
 		Who to Thy tribues on Si -- nai's height
 		In an -- cient times didst give the Law
@@ -70,6 +48,7 @@
     }
     \new Lyrics \lyricsto "melody" {
 		\set stanza = "4."
+         \set shortVocalName = \markup \bold \small "4."
 		O come, Thou Branch of Jes -- se's tree,
 		Free them from Sa -- tan's tyr -- an -- ny
 		That trust Thy might -- y pow'r to save,
@@ -77,6 +56,7 @@
     }
     \new Lyrics \lyricsto "melody" {
 		\set stanza = "5."
+         \set shortVocalName = \markup \bold \small "5."
 		O come, Thou Key of Da -- vid, come,
 		And o -- pen wide our heav'n -- ly home;
 		Make safe the way that leads on high,
@@ -84,6 +64,7 @@
     }
     \new Lyrics \lyricsto "melody" {
 		\set stanza = "6."
+         \set shortVocalName = \markup \bold \small "6."
 		O come, Thou Day -- spring from on high,
 		And cheer us by Thy draw -- ing nigh;
 		Di -- sperse the gloo -- my clouds of night,
@@ -91,10 +72,40 @@
     }
     \new Lyrics \lyricsto "melody" {
 		\set stanza = "7."
+         \set shortVocalName = \markup \bold \small "7."
 		O come, De -- sire of na -- tions, bind,
 		In one the hearts of all man -- kind;
 		Bid Thou our sad di -- vi -- sions cease,
 		And be Thy -- self our King of Peace.
+    }
+
+>>
+}
+
+\score { 
+<<
+    \new Voice = "melody" { 
+    \relative {
+		\time 2/4
+		\key g \major
+		\partial 8
+		\numericTimeSignature
+		\omit Score.TimeSignature
+			d''8 | d4. b8 | b4. 
+			b8  | a8(c8 b8) a8 | g4.
+			a8  | b8 g8 e8 g8 | a8(fis8 e8) d8 | e4.
+
+	}}
+
+    \new Lyrics \lyricsto "melody" {
+		Re -- joice! Re -- joice! Em -- man -- u -- el
+		shall come to thee, O Is -- ra -- el!
+    }
+
+    \new Lyrics \lyricsto "melody" {
+		\override LyricText.font-shape = #'italic
+		Gau -- de! Gau -- de! Em -- man -- u -- el
+		Nas -- ce -- tur pro te Is -- ra -- el!
     }
 
 >>

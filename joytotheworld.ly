@@ -6,13 +6,14 @@
     \relative {
 		\time 2/4
 		\numericTimeSignature
+        \omit Score.TimeSignature
 		\key d \major
         d''4 cis8. b16 | a4. g8 | fis4 e4 | d4.
-        a'8 | b4. b8 | cis4. cis8 | d2(d4.)
+        a'8 | b4.   b8 | cis4. \break cis8 | d2(d4.)
         d8 | d8(cis8) b8(a8) | a8.(g16 fis8) 
-        d'8 | d8(cis8) b8(a8) | a8.(g16 fis8) 
+        d'8 | d8(cis8) b8(a8) | a8.(g16 fis8) \break
         fis8 | fis8 fis8 fis8 fis16(g16) | a4.
-        g16(fis16) | e8 e8 e8 e16(fis16) | g4. 
+        g16(fis16) | e8 e8 e8 e16(fis16) | g4. \break
         fis16(e16) | d8(d'4) b8 | a8.(g16 fis8) g8 | fis4 e4 | d2
     }}
 

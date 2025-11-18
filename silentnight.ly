@@ -6,18 +6,19 @@
     \relative {
 		\time 6/8
 		\numericTimeSignature
+        \key g \minor
 		f'8.(g16) f8 d4. |
         f8.(g16) f8 d4. |
         d'4 d8 a4. | \break
-        b4 b8 f4. |
-        g4 g8 b8.(a16) g8 |
+        bes4 bes8 f4. |
+        g4 g8 bes8.(a16) g8 |
         f8. g16 f8 d4. | \break
-        g4 g8 b8. a16 g8 |
+        g4 g8 bes8. a16 g8 |
         f8. g16 f8 d4.|
-        c'4 c8 e8. c16 a8 |
-        b4.(d4.) |
-        b8(f8) d8 f8. e16 c8 |
-        b2.
+        c'4 c8 ees8. c16 a8 |
+        bes4.(d4.) |
+        bes8(f8) d8 f8. ees16 c8 |
+        bes2.
     }}
 
     \new Lyrics \lyricsto "refrain" {
